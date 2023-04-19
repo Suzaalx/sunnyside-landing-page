@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ 
+}
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+
+.btn{
+  @apply px-6 py-2 border border-transparent rounded-3xl;
+  transition: all 0.2s ease-in-out;
+}
+.btn:hover{
+  @apply  rounded-3xl border-gray-200 shadow-lg text-black;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  
+}
