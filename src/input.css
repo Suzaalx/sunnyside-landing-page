@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,7 +15,6 @@
 
 
 
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
 
 .btn{
   @apply px-6 py-2 border border-transparent rounded-3xl;
@@ -26,9 +27,15 @@
   
 }
 .more{
-  @apply mt-6 inline-block text-2xl relative;
+  @apply mt-6 block  relative font-fraunces;
 }
 .more::after{
-  @apply absolute bottom-0 w-28 h-3 border rounded-3xl -z-10 left-0  bg-yellow;
+  @apply absolute bottom-0 w-24 h-3 border rounded-3xl -z-10 left-0  bg-yellow;
   content: "";
+}
+.card{
+  @apply  flex flex-col items-center justify-center px-8 gap-4 w-full
+}
+.testimonial-p{
+  @apply  text-[1.125rem]  leading-8 font-semibold font-barlow text-very-dark-grayish-blue text-center
 }
