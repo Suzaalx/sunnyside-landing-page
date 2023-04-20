@@ -532,16 +532,25 @@ video {
   top: 25%;
 }
 
-.order-2 {
-  order: 2;
-}
-
-.order-1 {
-  order: 1;
-}
-
 .m-auto {
   margin: auto;
+}
+
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.box-border {
+  box-sizing: border-box;
 }
 
 .flex {
@@ -560,8 +569,8 @@ video {
   min-height: 100vh;
 }
 
-.w-11\/12 {
-  width: 91.666667%;
+.w-10\/12 {
+  width: 83.333333%;
 }
 
 .w-full {
@@ -572,12 +581,20 @@ video {
   width: 100vw;
 }
 
-.min-w-full {
-  min-width: 100%;
+.max-w-full {
+  max-width: 100%;
 }
 
 .grow {
   flex-grow: 1;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.place-items-center {
+  place-items: center;
 }
 
 .items-center {
@@ -596,8 +613,16 @@ video {
   gap: 2.5rem;
 }
 
-.place-self-center {
-  place-self: center;
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.bg-background {
+  background-color: hsl(51, 100%, 49%, 0.1);
 }
 
 .bg-\[url\(\'\.\.\/images\/desktop\/image-header\.jpg\'\)\] {
@@ -616,13 +641,19 @@ video {
   background-repeat: no-repeat;
 }
 
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.pt-10 {
-  padding-top: 2.5rem;
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .text-center {
@@ -700,23 +731,34 @@ video {
           backdrop-filter: blur(10px);
 }
 
-@media (min-width: 640px) {
-  .sm\:order-1 {
-    order: 1;
-  }
+.more {
+  position: relative;
+  margin-top: 1.5rem;
+  display: inline-block;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
 
-  .sm\:grid {
-    display: grid;
-  }
-
-  .sm\:grid-rows-2 {
-    grid-template-rows: repeat(2, minmax(0, 1fr));
-  }
+.more::after {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: -10;
+  height: 0.75rem;
+  width: 7rem;
+  border-radius: 1.5rem;
+  border-width: 1px;
+  background-color: hsl(51, 100%, 49%, 0.5);
+  content: "";
 }
 
 @media (min-width: 768px) {
-  .md\:order-2 {
-    order: 2;
+  .md\:order-first {
+    order: -9999;
+  }
+
+  .md\:order-last {
+    order: 9999;
   }
 
   .md\:grid-cols-2 {
@@ -726,11 +768,5 @@ video {
   .md\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
-  }
-}
-
-@media (min-width: 1024px) {
-  .lg\:order-1 {
-    order: 1;
   }
 }
