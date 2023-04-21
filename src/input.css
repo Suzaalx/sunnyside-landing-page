@@ -34,8 +34,11 @@
   content: "";
 }
 .card{
-  @apply  flex flex-col items-center justify-center px-8 gap-4 w-full
+  @apply  flex flex-col items-center justify-center px-8 gap-8 w-full
 }
 .testimonial-p{
-  @apply  text-[1.125rem]  leading-8 font-semibold font-barlow text-very-dark-grayish-blue text-center
+  @apply  md:text-[1.125rem]  leading-8 font-semibold font-barlow text-very-dark-grayish-blue text-center
+}
+.p-job{
+  @apply text-grayish-blue text-[14px] font-barlow
 }
