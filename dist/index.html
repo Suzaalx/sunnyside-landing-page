@@ -14,25 +14,25 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <script src="https://kit.fontawesome.com/754d4aae16.js" crossorigin="anonymous"></script>
     <title>Frontend Mentor | Sunnyside agency landing page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <link rel="stylesheet" href="output.css" />
   </head>
   <body
-    class="box-border min-h-screen w-screen flex flex-col justify-center overflow-x-hidden font-fraunces"
+    class="box-border  overflow-x-hidden font-fraunces"
   >
     <header
       class="bg-[url('../images/desktop/image-header.jpg')] bg-no-repeat bg-top max-w-full bg-cover min-h-screen text-white relative"
     >
-      <nav class="flex justify-between m-auto w-10/12 mt-8">
-        <div>
-          <h1 class="text-3xl font-extrabold">sunnyside</h1>
+      <nav class="flex items-center p-3 flex-wrap">
+        <div class=" my-6 ml-8 ">
+          <h1 class="text-3xl font-extrabold tracking-wide">sunnyside</h1>
         </div>
 
-        <div class="">
-          <ul class="flex gap-10 items-center mx-5 font-semibold text-xl">
+        <div class=" inline-flex flex-grow mr-8  ">
+          <ul class=" lg:inline-flex lg:flex-row ml-auto gap-6 text-xl">
             <li><a href="#" class="btn" role="button">About</a></li>
             <li>
               <a href="#" class="btn" role="button">Services</a>
@@ -43,6 +43,10 @@
             </li>
           </ul>
         </div>
+        <button class=" inline-flex p-3 hover:text-neutral-800 hover:bg-white rounded lg:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        
       </nav>
 
       <div class="flex justify-center items-center h-screen w-screen">
@@ -159,12 +163,12 @@
         class="w-full min-h-screen flex flex-col gap-16 p-12 text-center"
       >
         <h3
-          class="mt-14 py-8 text-xl tracking-[0.4rem] uppercase text-grayish-blue"
+          class="mt-14 py-12 text-xl tracking-[0.4rem] uppercase text-grayish-blue"
         >
           Client testimonials
         </h3>
 
-        <div class="grid md:grid-cols-1 lg:grid-cols-3 px-12 gap-4">
+        <div class="grid md:grid-cols-1 lg:grid-cols-3 px-12 gap-6">
           <div class="card">
             <img
               src="../images/image-emily.jpg"
@@ -207,18 +211,26 @@
         </div>
       </section>
 
-      <section class=" w-full ">
-        <div class="grid md:grid-cols-2  lg:grid-cols-4 w-full gap-4">
-        <div class="bg-black md:h-[25rem] lg:h-[30rem]"></div>
-        <div class="bg-black md:h-[25rem] lg:h-[30rem]"></div>
-        <div class="bg-black md:h-[25rem] lg:h-[30rem]"></div>
-        <div class="bg-black md:h-[25rem] lg:h-[30rem]"></div>
+      <section class=" w-full bg-footer-bg ">
+        <div class="grid sm:grid-cols-2  lg:grid-cols-4 w-full">
+        <div class="bg-black sm:h-[25rem] lg:h-[30rem]">
+          <img src="../images/desktop/image-gallery-cone.jpg" class="w-full object-cover h-full " alt="">
+        </div>
+        <div class="bg-black sm:h-[25rem] lg:h-[30rem]">
+          <img src="../images/desktop/image-gallery-sugarcubes.jpg" class="w-full object-cover h-full " alt="">
+        </div>
+        <div class="bg-black sm:h-[25rem] lg:h-[30rem]">
+          <img src="../images/desktop/image-gallery-milkbottles.jpg" class="w-full object-cover h-full " alt="">
+        </div>
+        <div class="bg-black sm:h-[25rem] lg:h-[30rem]">
+          <img src="../images/desktop/image-gallery-orange.jpg" class="w-full object-cover h-full " alt="">
+        </div>
         </div>
 
         <div
-          class="flex flex-col items-center  text-center w-full bg-footer-bg pt-10 px5 gap-10 font-barlow    "
+          class="flex flex-col items-center  text-center w-full  pt-20 px-5 gap-10 font-barlow    "
         >
-        <img class=" text-emerald-950 h-10 " src="../images/logo.svg" alt="">
+        <img class=" text-emerald-950  " src="../images/logo.svg" alt="">
           <div class="">
             <ul class="flex gap-8 text-[#6e8f78] text-xl">
               <li><a href="#" class="tracking-wide font-bold"> About</a></li>
@@ -252,27 +264,14 @@
           </ul>
           
         </div>
-        <!-- <p class="text-2xl text-slate-900 text-right">Frontend mentor challenge</p>
-        <p class="text-xl text-right">Done by Suzaalx</p>
-      </section>
+        
+        <div class=" flex flex-col font-chivo-mono text-gray-600 items-end ">
+        <p class=" text-[0.8rem]">Frontend mentor challenge </p>
+        <p class="text-[0.95rem]">Done by Suzaalx</p>
+      </div>
+     </section>
     </main>
 
-    <!-- About Services Projects Contact We are creatives Transform your brand We are
-    a full-service creative agency specializing in helping brands grow fast.
-    Engage your clients through compelling visuals that do most of the marketing
-    for you. Learn more Stand out to the right audience Using a collaborative
-    formula of designers, researchers, photographers, videographers, and
-    copywriters, we’ll build and extend your brand in digital places. Learn more
-    Graphic design Great design makes you memorable. We deliver artwork that
-    underscores your brand message and captures potential clients’ attention.
-    Photography Increase your credibility by getting the most stunning,
-    high-quality photos that improve your business image. Client testimonials We
-    put our trust in Sunnyside and they delivered, making sure our needs were
-    met and deadlines were always hit. Emily R. Marketing Director Sunnyside’s
-    enthusiasm coupled with their keen interest in our brand’s success made it a
-    satisfying and enjoyable experience. Thomas S. Chief Operating Officer
-    Incredible end result! Our sales increased over 400% when we worked with
-    Sunnyside. Highly recommended! Jennie F. Business Owner About Services
-    Projects Contact -->
+  
   </body>
 </html>
