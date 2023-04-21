@@ -21,7 +21,7 @@
   transition: all 0.2s ease-in-out;
 }
 .btn:hover{
-  @apply  rounded-3xl border-gray-200 shadow-lg text-black;
+  @apply  rounded-3xl text-black  shadow-lg;
   background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
   
