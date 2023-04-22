@@ -7,4 +7,5 @@
 
  Navbar is left and then this project will be done.
  I will finish it tommorow.
-![alt text](https://github.com/[suzaalx]/[sunnyside]/images/[main]/screenshot.png?raw=true)
+
+![screenshot](https://user-images.githubusercontent.com/122628569/233771875-362bb7fa-d841-478c-8826-f7f6170b3b8a.png)
