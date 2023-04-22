@@ -42,3 +42,6 @@
 .p-job{
   @apply text-grayish-blue text-[14px] font-barlow mb-4
 }
+.active{
+  @apply flex flex-col absolute  top-24 bg-white left-1/2 -translate-x-1/2  text-black lg:left-[-100%] 
+}
