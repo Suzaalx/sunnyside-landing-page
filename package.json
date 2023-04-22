@@ -1,13 +1,13 @@
 {
   "name": "sunnyside-agency-landing-page-main",
   "version": "1.0.0",
-  "description": "![Design preview for the Sunnyside agency landing page coding challenge](./design/desktop-preview.jpg)",
+  "description": "!Sunnyside agency landing page completed by suzzalx](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
-  "author": "",
+  "author": "Suzzalx",
   "license": "ISC",
   "devDependencies": {
     "@savvywombat/tailwindcss-grid-areas": "^3.0.1",
